@@ -19,6 +19,8 @@ public class RegisterTC_02 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.opencart.com/index.php?route=common/home");
 		
+		//Registration page starts here.....
+		
 		Registration_Page rp = new Registration_Page(driver);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		rp.clickHome();
